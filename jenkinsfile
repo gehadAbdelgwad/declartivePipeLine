@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    stages {
+    
+        stage('SCM CHECKOUT') {
+        
+            steps {
+                echo 'Gettin Code From Git Hup'
+                echo 'SCM Statge'
+            }
+        }
+        
+        stage('build') {
+        
+            steps {
+                echo 'Gettin Code From Git Hup'
+                echo 'build Statge'
+            }
+        }
+        
+        stage('test') {
+            steps {
+                echo 'test Statge'
+            }
+        }
+        
+        stage('Deploye') {
+            steps {
+                 echo 'Deploye Statge'  
+            }
+        }
+    }
+}
